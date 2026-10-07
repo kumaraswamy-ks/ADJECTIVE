@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KS Learning Center – Adjective: Complete English Grammar</title>
+<meta name="description" content="Self-learning Adjective course with English & Kannada support, pronunciation, practice, quizzes, worksheets and progress tracking.">
+<style>
+:root{--bg:#fbf7f0;--card:#fff;--ink:#1d2433;--muted:#5d6678;--pri:#0f6e5c;--pri2:#e2f3ee;--acc:#e8862a;--acc2:#fdf0e2;--bad:#c4372f;--bad2:#fbe6e4;--good:#1f8a4c;--good2:#e3f5ea;--line:#e6dfd2;--sh:0 2px 10px rgba(30,30,50,.07);--r:14px}
+body.dark{--bg:#12161f;--card:#1c2230;--ink:#eef1f6;--muted:#a3abbb;--pri:#3cc4a6;--pri2:#173a35;--acc:#f3a457;--acc2:#3a2b1c;--bad:#ff7b72;--bad2:#3d1f1f;--good:#5bd08a;--good2:#183626;--line:#2c3446;--sh:0 2px 10px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Roboto,"Noto Sans Kannada","Nirmala UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+body.big{font-size:19px}
+header{position:sticky;top:0;z-index:20;background:var(--pri);color:#fff;padding:10px 14px;box-shadow:var(--sh)}
+.hrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;max-width:1100px;margin:auto}
+.brand{flex:1;min-width:180px;cursor:pointer}
+.brand b{display:block;font-size:1.05em;letter-spacing:.06em}
+.brand small{opacity:.85;font-size:.75em}
+.hbtn{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:7px 11px;font-size:.85em;cursor:pointer;min-height:38px}
+.hbtn.on{background:#fff;color:var(--pri)}
+#search{width:100%;max-width:1100px;margin:8px auto 0;display:block;padding:9px 12px;border-radius:10px;border:none;font-size:.95em}
+main{max-width:1100px;margin:auto;padding:14px}
+h1{font-size:1.5em;margin:.3em 0}h2{font-size:1.25em;margin:.8em 0 .4em;color:var(--pri)}h3{font-size:1.05em;margin:.6em 0 .3em}
+.tag{font-size:.8em;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 12px;cursor:pointer;box-shadow:var(--sh);transition:transform .15s;text-align:left;color:var(--ink);font:inherit}
+.tile:hover{transform:translateY(-2px);border-color:var(--pri)}
+.tile .ic{font-size:1.6em}.tile b{display:block;font-size:.95em;margin-top:4px}.tile span{font-size:.75em;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin:10px 0;box-shadow:var(--sh)}
+.kn{background:var(--acc2);border-left:4px solid var(--acc);padding:8px 10px;border-radius:8px;margin:6px 0}
+.ex{background:var(--pri2);border-radius:8px;padding:8px 10px;margin:4px 0}
+.ex mark,.hl{background:var(--acc);color:#fff;padding:0 4px;border-radius:4px}
+.btn{background:var(--pri);color:#fff;border:none;border-radius:10px;padding:9px 14px;font:inherit;font-size:.92em;cursor:pointer;min-height:40px;margin:3px}
+.btn.alt{background:var(--card);color:var(--pri);border:1.5px solid var(--pri)}
+.btn.warn{background:var(--bad)}
+.btn.sm{padding:4px 9px;min-height:30px;font-size:.8em}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;margin:6px 0;font:inherit;cursor:pointer}
+.opt:hover{border-color:var(--pri)}
+.opt.ok{background:var(--good2);border-color:var(--good)}.opt.no{background:var(--bad2);border-color:var(--bad)}
+.fb{padding:10px;border-radius:10px;margin-top:8px}.fb.ok{background:var(--good2)}.fb.no{background:var(--bad2)}
+input,select,textarea{font:inherit;padding:8px 10px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:.9em}td,th{border:1px solid var(--line);padding:6px 8px;text-align:left}th{background:var(--pri2)}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.tabs button{white-space:nowrap}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--pri)}
+.stat{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.stat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}.stat b{display:block;font-size:1.4em;color:var(--pri)}
+.flash{min-height:180px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.3em;cursor:pointer;perspective:800px}
+.word{display:inline-block;padding:3px 7px;margin:3px;border-radius:7px;border:1.5px solid var(--line);cursor:pointer;background:var(--card)}
+.word.sel{background:var(--acc);color:#fff;border-color:var(--acc)}
+.word.ok{background:var(--good);color:#fff}.word.miss{border-color:var(--bad);border-style:dashed}
+.chip{display:inline-block;background:var(--pri2);color:var(--pri);border-radius:20px;padding:2px 10px;font-size:.78em;margin:2px}
+.back{margin-bottom:6px}
+.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:20px;z-index:99;font-size:.9em;display:none}
+.roadmap{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.roadmap span{background:var(--pri2);color:var(--pri);padding:4px 10px;border-radius:8px;font-size:.8em;font-weight:600}
+.hero{background:linear-gradient(135deg,var(--pri),#0b4f43);color:#fff;border-radius:18px;padding:18px;margin-bottom:12px}
+.hero h1{color:#fff}.hero p{margin:.2em 0;opacity:.92}
+footer{text-align:center;color:var(--muted);font-size:.8em;padding:20px}
+.ws-q{margin:6px 0;page-break-inside:avoid}
+.hide{display:none!important}
+@media print{header,.noprint,.btn,footer,.toast{display:none!important}body{background:#fff;color:#000}.card{box-shadow:none;border:none}main{max-width:none}.ans-key{page-break-before:always}}
+</style>
+</head>
+<body>
+<header class="noprint">
+ <div class="hrow">
+  <div class="brand" onclick="go('home')"><b>KS LEARNING CENTER</b><small>Learn English • Learn Adjectives • Describe Better</small></div>
+  <button class="hbtn" id="langBtn" onclick="toggleLang()">ಕನ್ನಡ</button>
+  <button class="hbtn" onclick="toggleDark()" aria-label="Dark mode">🌓</button>
+  <button class="hbtn" onclick="document.body.classList.toggle('big')" aria-label="Text size">A+</button>
+  <button class="hbtn" onclick="window.print()" aria-label="Print">🖨</button>
+ </div>
+ <input id="search" type="search" placeholder="Search lessons or adjectives (e.g. good, comparative, few)…" oninput="doSearch(this.value)">
+</header>
+<main id="app"></main>
+<footer>KS LEARNING CENTER • Learn → Understand → Practise → Test → Revise → Master<br>Works offline • Progress saved on this device</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= STATE ================= */
+const LS='ksAdjV1';
+let S=JSON.parse(localStorage.getItem(LS)||'null')||{lang:'en',dark:false,done:{},att:0,cor:0,typeStats:{},mist:[],bm:[],xp:0,streak:0,lastDay:'',tests:[],daily:{}};
+function save(){localStorage.setItem(LS,JSON.stringify(S))}
+const $=id=>document.getElementById(id);
+const app=$('app');
+const KN=()=>S.lang==='kn';
+function t(en,kn){return KN()&&kn?kn:en}
+function toast(m){const e=$('toast');e.textContent=m;e.style.display='block';clearTimeout(e._t);e._t=setTimeout(()=>e.style.display='none',1800)}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function hl(s){return esc(s).replace(/\[(.+?)\]/g,'<mark>$1</mark>')}
+function today(){return new Date().toISOString().slice(0,10)}
+(function streak(){const d=today();if(S.lastDay!==d){const y=new Date(Date.now()-864e5).toISOString().slice(0,10);S.streak=S.lastDay===y?S.streak+1:1;S.lastDay=d;save()}})();
+
+/* ================= SPEECH ================= */
+let rate=1,lastSpoken='';
+function speak(txt,r){if(!('speechSynthesis' in window)){toast('Pronunciation not supported in this browser');return}
+ lastSpoken=txt;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);u.lang='en-IN';u.rate=r||rate;
+ const v=speechSynthesis.getVoices().find(v=>/en[-_](IN|GB|US)/.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}
+function sp(txt){return `<button class="btn sm alt" onclick="speak('${txt.replace(/'/g,"\\'")}')" aria-label="Listen">🔊</button>`}
+
+/* ================= LESSON CONTENT ================= */
+// ex: sentences, adjective marked with [ ]
+const L=[
+{id:'what',ic:'📘',en:'What is an Adjective?',kn:'ವಿಶೇಷಣ ಎಂದರೇನು?',
+ d:'An adjective is a word that describes or gives more information about a noun or pronoun. It tells us what kind, how many, how much, which one, or whose.',
+ dk:'ನಾಮಪದ ಅಥವಾ ಸರ್ವನಾಮದ ಗುಣ, ಪ್ರಮಾಣ, ಸಂಖ್ಯೆ ಅಥವಾ ಸ್ವಭಾವವನ್ನು ವಿವರಿಸುವ ಪದವನ್ನು ವಿಶೇಷಣ ಎನ್ನುತ್ತೇವೆ.',
+ ex:['She has a [beautiful] garden.','I bought [three] pens.','The sky is [blue].','[This] book is mine.'],
+ tip:'Ask: What kind? How many? How much? Which? Whose? The answer word is usually an adjective.',tipk:'ಯಾವ ರೀತಿಯ? ಎಷ್ಟು? ಯಾವುದು? ಯಾರದು? ಎಂಬ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರವೇ ವಿಶೇಷಣ.'},
+{id:'identify',ic:'🔍',en:'Identifying Adjectives',kn:'ವಿಶೇಷಣ ಗುರುತಿಸುವಿಕೆ',
+ d:'Find the noun first, then look for the word that describes it. Adjectives usually come before a noun (attributive) or after a linking verb like is, am, are, was, seem, look, become (predicative).',
+ dk:'ಮೊದಲು ನಾಮಪದವನ್ನು ಹುಡುಕಿ, ನಂತರ ಅದನ್ನು ವಿವರಿಸುವ ಪದವನ್ನು ಗುರುತಿಸಿ. ವಿಶೇಷಣ ಸಾಮಾನ್ಯವಾಗಿ ನಾಮಪದದ ಮೊದಲು ಅಥವಾ is/was ನಂತರ ಬರುತ್ತದೆ.',
+ ex:['The [tall] boy won.','The boy is [tall].','The soup tastes [delicious].','He became [famous].'],
+ tip:'Words after "look, feel, taste, smell, sound, seem" are usually adjectives, not adverbs.'},
+{id:'quality',ic:'🌈',en:'Adjectives of Quality',kn:'ಗುಣವಾಚಕ ವಿಶೇಷಣ',
+ d:'They describe the kind or quality of a noun. Answer the question "What kind?". Examples: good, bad, honest, brave, red, big, clever, Indian.',
+ dk:'ನಾಮಪದದ ಗುಣವನ್ನು ತಿಳಿಸುತ್ತವೆ. "ಯಾವ ರೀತಿಯ?" ಎಂಬ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರ.',
+ ex:['Ravi is an [honest] man.','She wore a [red] saree.','It was a [cold] morning.']},
+{id:'quantity',ic:'⚖️',en:'Adjectives of Quantity',kn:'ಪ್ರಮಾಣವಾಚಕ ವಿಶೇಷಣ',
+ d:'They show how much of a thing (uncountable nouns). Examples: some, much, little, enough, whole, all, no, any, sufficient, half.',
+ dk:'ಒಂದು ವಸ್ತು ಎಷ್ಟು ಪ್ರಮಾಣದಲ್ಲಿದೆ ಎಂದು ತಿಳಿಸುತ್ತವೆ (ಎಣಿಸಲಾಗದ ನಾಮಪದಗಳು).',
+ ex:['There is [little] milk.','He ate the [whole] cake.','We have [enough] time.','I want [some] water.']},
+{id:'number',ic:'🔢',en:'Adjectives of Number',kn:'ಸಂಖ್ಯಾವಾಚಕ ವಿಶೇಷಣ',
+ d:'They show how many or in what order. Definite: one, two, first, second. Indefinite: many, few, several, some, all. Distributive: each, every, either, neither.',
+ dk:'ಎಷ್ಟು ಅಥವಾ ಯಾವ ಕ್ರಮ ಎಂಬುದನ್ನು ತಿಳಿಸುತ್ತವೆ. ಉದಾ: ಒಂದು, ಮೊದಲ, ಅನೇಕ.',
+ ex:['I have [two] brothers.','He came [first].','[Many] students passed.','[Few] people know this.']},
+{id:'demo',ic:'👉',en:'Demonstrative Adjectives',kn:'ನಿರ್ದೇಶಕ ವಿಶೇಷಣ',
+ d:'They point out which noun: this, that (singular), these, those (plural). They are adjectives only when followed by a noun.',
+ dk:'ಯಾವ ವಸ್ತು ಎಂದು ತೋರಿಸುತ್ತವೆ: this, that, these, those. ನಂತರ ನಾಮಪದ ಇದ್ದರೆ ಮಾತ್ರ ವಿಶೇಷಣ.',
+ ex:['[This] pen is new.','[Those] mangoes are sweet.','Compare: "This is new." → this = pronoun.']},
+{id:'poss',ic:'🏠',en:'Possessive Adjectives',kn:'ಸ್ವಾಮ್ಯಸೂಚಕ ವಿಶೇಷಣ',
+ d:'They show ownership: my, your, his, her, its, our, their. Always followed by a noun. (mine, yours, hers = pronouns.)',
+ dk:'ಮಾಲೀಕತ್ವ ತೋರಿಸುತ್ತವೆ: my, your, his, her, its, our, their.',
+ ex:['This is [my] bag.','The dog wagged [its] tail.','[Their] house is big.'],
+ tip:'its = possessive; it\'s = it is. Never write "it\'s tail".'},
+{id:'interrog',ic:'❓',en:'Interrogative Adjectives',kn:'ಪ್ರಶ್ನಾರ್ಥಕ ವಿಶೇಷಣ',
+ d:'What, which, whose — used with a noun to ask a question.',dk:'ನಾಮಪದದೊಂದಿಗೆ ಪ್ರಶ್ನೆ ಕೇಳಲು: what, which, whose.',
+ ex:['[What] time is it?','[Which] colour do you like?','[Whose] book is this?']},
+{id:'distrib',ic:'🧩',en:'Distributive Adjectives',kn:'ವಿಭಾಗವಾಚಕ ವಿಶೇಷಣ',
+ d:'Each, every, either, neither — refer to persons/things one by one. They take a singular noun and singular verb.',
+ dk:'ಒಬ್ಬೊಬ್ಬರನ್ನಾಗಿ ಸೂಚಿಸುತ್ತವೆ: each, every, either, neither. ಏಕವಚನ ನಾಮಪದ ಮತ್ತು ಕ್ರಿಯಾಪದ.',
+ ex:['[Each] student has a book.','[Every] boy was present.','[Neither] answer is correct.']},
+{id:'proper',ic:'🌏',en:'Proper Adjectives',kn:'ವಿಶಿಷ್ಟನಾಮ ವಿಶೇಷಣ',
+ d:'Formed from proper nouns; always begin with a capital letter: India → Indian, Shakespeare → Shakespearean, France → French.',
+ dk:'ವಿಶಿಷ್ಟ ನಾಮಪದದಿಂದ ಬಂದವು; ಯಾವಾಗಲೂ ದೊಡ್ಡ ಅಕ್ಷರದಿಂದ ಆರಂಭ.',
+ ex:['I love [Indian] food.','She studies [French] literature.']},
+{id:'compound',ic:'🔗',en:'Compound Adjectives',kn:'ಸಂಯುಕ್ತ ವಿಶೇಷಣ',
+ d:'Two or more words joined (usually with a hyphen) to describe a noun: well-known, ten-year-old, part-time, kind-hearted. The number stays singular: a five-star hotel (not five-stars).',
+ dk:'ಎರಡು ಪದಗಳು hyphen ಮೂಲಕ ಸೇರಿ ವಿಶೇಷಣವಾಗುತ್ತವೆ. ಉದಾ: well-known.',
+ ex:['He is a [well-known] author.','She has a [ten-year-old] son.','It was a [two-hour] film.']},
+{id:'particip',ic:'🎭',en:'Participial Adjectives',kn:'ಕೃದಂತ ವಿಶೇಷಣ',
+ d:'Formed from verbs. -ing describes the cause (the thing): boring, exciting. -ed describes the feeling (the person): bored, excited.',
+ dk:'ಕ್ರಿಯಾಪದದಿಂದ ಬಂದವು. -ing = ಕಾರಣ (ವಸ್ತು), -ed = ಭಾವನೆ (ವ್ಯಕ್ತಿ).',
+ ex:['The movie was [boring].','I was [bored].','A [broken] chair.','The news is [surprising].']},
+{id:'attpred',ic:'📍',en:'Attributive & Predicative',kn:'ಗುಣಾತ್ಮಕ ಮತ್ತು ವಿಧೇಯ ವಿಶೇಷಣ',
+ d:'Attributive: before the noun (a happy child). Predicative: after a linking verb (The child is happy). Some adjectives are only predicative: afraid, asleep, alive, alone, awake.',
+ dk:'ನಾಮಪದದ ಮೊದಲು = Attributive. is/seem ನಂತರ = Predicative. afraid, asleep ನಂತಹವು ನಂತರ ಮಾತ್ರ.',
+ ex:['A [happy] child (attributive)','The child is [happy] (predicative)','The baby is [asleep]. (not "an asleep baby")']},
+{id:'coord',ic:'⚡',en:'Coordinate Adjectives',kn:'ಸಮಾನ ವಿಶೇಷಣಗಳು',
+ d:'Two adjectives of equal rank describing the same noun; separated by a comma or "and". Test: can you swap them or add "and"? Then use a comma.',
+ dk:'ಸಮಾನ ಮಹತ್ವದ ಎರಡು ವಿಶೇಷಣಗಳು; ನಡುವೆ comma ಅಥವಾ and.',
+ ex:['A [long, tiring] journey.','A [warm and friendly] host.','But: a [bright red] car (no comma).']},
+{id:'formation',ic:'🛠️',en:'Adjective Formation',kn:'ವಿಶೇಷಣ ರಚನೆ',
+ d:'Adjectives are formed by adding suffixes to nouns/verbs: -ful (beauty→beautiful), -less (care→careless), -ous (danger→dangerous), -y (rain→rainy), -al (nation→national), -ive (act→active), -able (read→readable), -ish (child→childish), -ic (hero→heroic), -ly (friend→friendly), -en (wood→wooden). Prefixes give opposites: un-, in-, im-, ir-, il-, dis-.',
+ dk:'ನಾಮಪದ/ಕ್ರಿಯಾಪದಕ್ಕೆ -ful, -less, -ous, -y, -al, -ive ಇತ್ಯಾದಿ ಸೇರಿಸಿ ವಿಶೇಷಣ ರಚಿಸಬಹುದು. un-, im-, dis- ವಿರುದ್ಧಾರ್ಥ.',
+ ex:['beauty → [beautiful]','care → [careless]','danger → [dangerous]','possible → [impossible]','legal → [illegal]']},
+{id:'degrees',ic:'📶',en:'Degrees of Comparison',kn:'ಹೋಲಿಕೆಯ ಮಟ್ಟಗಳು',
+ d:'Positive (no comparison): tall. Comparative (two): taller than. Superlative (three or more): the tallest. Short words add -er/-est; long words use more/most. Double the consonant: big→bigger; y→i: happy→happier.',
+ dk:'Positive = ಹೋಲಿಕೆ ಇಲ್ಲ; Comparative = ಎರಡರ ನಡುವೆ (than); Superlative = ಮೂರು ಅಥವಾ ಹೆಚ್ಚು (the).',
+ ex:['Ram is [tall].','Ram is [taller] than Shyam.','Ram is [the tallest] in the class.','This is [more beautiful] than that.'],
+ tip:'Never use double comparatives: "more better" ✗ → "better" ✓.'},
+{id:'irregular',ic:'🌀',en:'Irregular Comparison',kn:'ಅನಿಯಮಿತ ಹೋಲಿಕೆ',
+ d:'good/well–better–best; bad/ill–worse–worst; many/much–more–most; little–less–least; far–farther/further–farthest/furthest; old–older/elder–oldest/eldest; late–later/latter–latest/last.',
+ dk:'ಕೆಲವು ವಿಶೇಷಣಗಳು ನಿಯಮ ಪಾಲಿಸುವುದಿಲ್ಲ: good–better–best.',
+ ex:['This is [better] than that.','He is my [elder] brother. (family)','He is [older] than me. (than)','For [further] details, call us.']},
+{id:'structures',ic:'🏗️',en:'Comparative Structures',kn:'ಹೋಲಿಕೆ ರಚನೆಗಳು',
+ d:'as + positive + as (as tall as); not so/as…as; comparative + than; the + comparative, the + comparative (The more you read, the wiser you become); "superior, inferior, senior, junior, prior, prefer" take "to" not "than"; "one of the + superlative + plural noun".',
+ dk:'as…as, than, the more…the more ರಚನೆಗಳು. superior/senior ನಂತರ "to" ಬಳಸಿ, "than" ಅಲ್ಲ.',
+ ex:['She is [as clever as] her sister.','He is [senior to] me.','[The harder] you work, [the better] you do.','Delhi is [one of the largest] cities.']},
+{id:'order',ic:'📏',en:'Order of Adjectives',kn:'ವಿಶೇಷಣಗಳ ಕ್ರಮ',
+ d:'Opinion → Size → Age → Shape → Colour → Origin → Material → Purpose → Noun. Memory trick: OSASCOMP.',
+ dk:'ಅಭಿಪ್ರಾಯ → ಗಾತ್ರ → ವಯಸ್ಸು → ಆಕಾರ → ಬಣ್ಣ → ಮೂಲ → ವಸ್ತು → ಉದ್ದೇಶ → ನಾಮಪದ (OSASCOMP).',
+ ex:['A [beautiful small old] house.','A [big round wooden] table.','A [lovely red Indian silk] saree.']},
+{id:'advadj',ic:'⚔️',en:'Adjective vs Adverb',kn:'ವಿಶೇಷಣ vs ಕ್ರಿಯಾವಿಶೇಷಣ',
+ d:'An adjective describes a noun/pronoun; an adverb describes a verb, adjective or another adverb. She is a quick runner (adj). She runs quickly (adv). After linking verbs use adjectives: She looks happy (not happily). Fast, hard, late, early can be both.',
+ dk:'ವಿಶೇಷಣ ನಾಮಪದವನ್ನು ವಿವರಿಸುತ್ತದೆ; ಕ್ರಿಯಾವಿಶೇಷಣ ಕ್ರಿಯಾಪದವನ್ನು ವಿವರಿಸುತ್ತದೆ.',
+ ex:['He is a [good] singer. / He sings well.','The flower smells [sweet].','A [fast] car / He drives fast (adv).']},
+{id:'clause',ic:'🧱',en:'Adjective Phrase & Clause',kn:'ವಿಶೇಷಣ ಪದಗುಚ್ಛ ಮತ್ತು ಉಪವಾಕ್ಯ',
+ d:'Adjective phrase: a group of words without a verb that describes a noun (a man [of great courage]). Adjective clause: a group of words with a subject and verb, usually beginning with who, which, that, whose, where, when (The boy [who won] is my friend).',
+ dk:'Phrase = ಕ್ರಿಯಾಪದವಿಲ್ಲದ ಪದಗುಚ್ಛ; Clause = ಕ್ರಿಯಾಪದವಿರುವ, who/which/that ನಿಂದ ಆರಂಭವಾಗುವ ಉಪವಾಕ್ಯ.',
+ ex:['A girl [with blue eyes] came.','The book [that I bought] is good.','This is the house [where I was born].']},
+{id:'fewlittle',ic:'🤏',en:'Few / A few / Little / A little',kn:'Few / A few / Little / A little',
+ d:'Few/a few/the few → countable. Little/a little/the little → uncountable. "Few/little" = almost none (negative). "A few/a little" = some (positive). "The few/the little" = all of the small amount that exists.',
+ dk:'few = ಬಹುತೇಕ ಇಲ್ಲ; a few = ಕೆಲವು; the few = ಇರುವ ಕೆಲವೆಲ್ಲ. little ಎಣಿಸಲಾಗದ ನಾಮಪದಕ್ಕೆ.',
+ ex:['[Few] people came. (disappointing)','[A few] friends helped me.','[The few] books I had were lost.','There is [a little] hope.']},
+{id:'manymuch',ic:'📊',en:'Many/Much • Each/Every',kn:'Many/Much • Each/Every',
+ d:'Many + countable plural; much + uncountable. More/most are their comparative/superlative. Each = individually (two or more); every = all (three or more), never used for two. Both take singular verbs.',
+ dk:'many ಎಣಿಸಬಹುದಾದ, much ಎಣಿಸಲಾಗದ ನಾಮಪದಕ್ಕೆ. each/every ನಂತರ ಏಕವಚನ ಕ್ರಿಯಾಪದ.',
+ ex:['[Many] books / [much] water','[Each] of the two boys got a prize.','[Every] student is present.']},
+{id:'errors',ic:'🚫',en:'Common Adjective Errors',kn:'ಸಾಮಾನ್ಯ ತಪ್ಪುಗಳು',
+ d:'✗ more better → ✓ better • ✗ most cleverest → ✓ cleverest • ✗ senior than → ✓ senior to • ✗ a ten-years-old boy → ✓ ten-year-old • ✗ elder than → ✓ older than • ✗ less students → ✓ fewer students • ✗ She looks beautifully → ✓ beautiful • ✗ It\'s colour → ✓ its colour • ✗ more perfect/most unique → ✓ perfect/unique • ✗ the best of the two → ✓ the better of the two.',
+ dk:'ಪರೀಕ್ಷೆಯಲ್ಲಿ ಹೆಚ್ಚು ಬರುವ ತಪ್ಪುಗಳು ಮೇಲಿವೆ.',ex:[]},
+{id:'confusing',ic:'🤔',en:'Confusing Adjectives',kn:'ಗೊಂದಲದ ವಿಶೇಷಣಗಳು',
+ d:'elder/older • farther (distance)/further (additional) • later/latter • latest/last • fewer/less • economic (economy)/economical (thrifty) • historic (important)/historical (of history) • sensible (wise)/sensitive (easily affected) • healthy/healthful • childish (silly)/childlike (innocent).',
+ dk:'ಒಂದೇ ರೀತಿ ಕಾಣುವ ಆದರೆ ಬೇರೆ ಅರ್ಥದ ಪದಗಳು.',
+ ex:['He is a [sensible] man (wise).','She is [sensitive] to criticism.','Of tea and coffee, I prefer the [latter].']}
+];
+const PRON=['Adjective','Adjective of Quality','Adjective of Quantity','Adjective of Number','Demonstrative Adjective','Possessive Adjective','Interrogative Adjective','Distributive Adjective','Proper Adjective','Compound Adjective','Comparative','Superlative','Attributive Adjective','Predicative Adjective','Participial Adjective','Adjective Phrase','Adjective Clause'];
+
+/* Reference bank: positive, comparative, superlative, meaning-kn */
+const BANK=[['good','better','best','ಒಳ್ಳೆಯ'],['bad','worse','worst','ಕೆಟ್ಟ'],['tall','taller','tallest','ಎತ್ತರದ'],['big','bigger','biggest','ದೊಡ್ಡ'],['happy','happier','happiest','ಸಂತೋಷದ'],['beautiful','more beautiful','most beautiful','ಸುಂದರ'],['clever','cleverer','cleverest','ಬುದ್ಧಿವಂತ'],['little','less','least','ಸ್ವಲ್ಪ'],['many','more','most','ಅನೇಕ'],['much','more','most','ಹೆಚ್ಚು'],['far','farther/further','farthest/furthest','ದೂರ'],['old','older/elder','oldest/eldest','ಹಳೆಯ'],['hot','hotter','hottest','ಬಿಸಿ'],['easy','easier','easiest','ಸುಲಭ'],['intelligent','more intelligent','most intelligent','ಬುದ್ಧಿವಂತ'],['brave','braver','bravest','ಧೈರ್ಯಶಾಲಿ'],['honest','more honest','most honest','ಪ್ರಾಮಾಣಿಕ'],['strong','stronger','strongest','ಬಲಶಾಲಿ'],['thin','thinner','thinnest','ತೆಳ್ಳಗಿನ'],['wise','wiser','wisest','ಜ್ಞಾನಿ'],['useful','more useful','most useful','ಉಪಯುಕ್ತ'],['dangerous','more dangerous','most dangerous','ಅಪಾಯಕಾರಿ'],['late','later/latter','latest/last','ತಡ'],['heavy','heavier','heaviest','ಭಾರ'],['famous','more famous','most famous','ಪ್ರಸಿದ್ಧ'],['cheap','cheaper','cheapest','ಅಗ್ಗ'],['important','more important','most important','ಮುಖ್ಯ'],['simple','simpler','simplest','ಸರಳ'],['busy','busier','busiest','ಕಾರ್ಯನಿರತ'],['narrow','narrower','narrowest','ಕಿರಿದಾದ']];
+const FORM=[['beauty','beautiful','-ful'],['care','careless','-less'],['danger','dangerous','-ous'],['rain','rainy','-y'],['nation','national','-al'],['act','active','-ive'],['read','readable','-able'],['child','childish','-ish'],['hero','heroic','-ic'],['friend','friendly','-ly'],['wood','wooden','-en'],['fame','famous','-ous'],['help','helpful','-ful'],['hope','hopeless','-less'],['wind','windy','-y'],['attract','attractive','-ive'],['comfort','comfortable','-able'],['history','historical','-al'],['gold','golden','-en'],['fool','foolish','-ish'],['possible','impossible','im-'],['happy','unhappy','un-'],['legal','illegal','il-'],['regular','irregular','ir-'],['honest','dishonest','dis-']];
+
+/* ================= QUESTION DATABASE ================= */
+// [type, level(1 easy/2 med/3 hard/4 comp), question, options(first=correct), explanation]
+const QR=[
+['identify',1,'Find the adjective: "She has a beautiful voice."',['beautiful','voice','has','She'],'"Beautiful" describes the noun voice.'],
+['identify',1,'Find the adjective: "The old man walked slowly."',['old','slowly','walked','man'],'"Old" describes man; "slowly" is an adverb.'],
+['identify',1,'Find the adjective: "I need three books."',['three','need','books','I'],'"Three" tells how many books.'],
+['identify',1,'Find the adjective: "The water is cold."',['cold','water','is','The'],'Predicative adjective after "is".'],
+['identify',2,'Find the adjective: "He seems tired today."',['tired','seems','today','He'],'"Tired" follows linking verb "seems".'],
+['identify',2,'Find the adjective: "Whose car is parked outside?"',['Whose','car','parked','outside'],'"Whose" with a noun = interrogative adjective.'],
+['type',1,'"Ravi is an honest boy." — "honest" is an adjective of…',['Quality','Quantity','Number','Demonstrative'],'It tells what kind of boy.'],
+['type',1,'"I drank some milk." — "some" is an adjective of…',['Quantity','Number','Quality','Possessive'],'Milk is uncountable → quantity.'],
+['type',1,'"Some boys were absent." — "some" is an adjective of…',['Number','Quantity','Quality','Distributive'],'Boys are countable → number.'],
+['type',1,'"These flowers are fresh." — "These" is…',['Demonstrative','Possessive','Interrogative','Distributive'],'It points out which flowers.'],
+['type',1,'"This is our school." — "our" is…',['Possessive','Demonstrative','Proper','Quantity'],'Shows ownership.'],
+['type',2,'"Which road leads to Mysuru?" — "Which" is…',['Interrogative adjective','Interrogative pronoun','Relative pronoun','Demonstrative adjective'],'Used with a noun "road" to ask.'],
+['type',2,'"Each player gets a medal." — "Each" is…',['Distributive','Number','Demonstrative','Quantity'],'Refers to players one by one.'],
+['type',2,'"He likes Chinese food." — "Chinese" is…',['Proper adjective','Compound adjective','Possessive','Quantity'],'From proper noun China.'],
+['type',2,'"She is a kind-hearted lady." — "kind-hearted" is…',['Compound adjective','Proper adjective','Participial','Distributive'],'Two words joined by a hyphen.'],
+['type',2,'"The broken glass hurt him." — "broken" is…',['Participial adjective','Verb','Adverb','Proper adjective'],'Past participle used as an adjective.'],
+['type',3,'"The baby is asleep." — "asleep" is used…',['Predicatively','Attributively','As an adverb','As a noun'],'"Asleep" is only predicative.'],
+['type',3,'"This is mine." — "This" is a…',['Demonstrative pronoun','Demonstrative adjective','Possessive adjective','Interrogative adjective'],'No noun follows "This".'],
+['degree',1,'Ravi is ___ than Raju.',['taller','tall','tallest','more tall'],'Comparing two → comparative + than.'],
+['degree',1,'Everest is the ___ mountain in the world.',['highest','higher','high','more high'],'Superlative with "the".'],
+['degree',1,'This book is ___ than that one.',['better','gooder','more good','best'],'good–better–best.'],
+['degree',2,'This is the ___ film I have ever seen.',['worst','worse','baddest','most bad'],'bad–worse–worst.'],
+['degree',2,'Gold is ___ than silver.',['more precious','preciouser','most precious','precious'],'Long word → more.'],
+['degree',2,'She is ___ as her mother.',['as tall','taller','tallest','more tall'],'as + positive + as.'],
+['degree',2,'Today is ___ than yesterday.',['hotter','hoter','more hot','hottest'],'Double the final consonant: hot → hotter.'],
+['degree',3,'He is the ___ of the two brothers.',['cleverer','cleverest','more clever','clever'],'"Of the two" → comparative with "the".'],
+['degree',3,'The ___ you practise, the ___ you become.',['more, better','most, best','much, good','more, best'],'The + comparative, the + comparative.'],
+['degree',3,'Change to comparative: "No other boy is as tall as Ravi."',['Ravi is taller than any other boy.','Ravi is the tallest boy.','Ravi is taller than all boy.','Ravi is as tall as other boys.'],'"than any other" + singular noun.'],
+['form',1,'Adjective form of "danger":',['dangerous','dangerly','dangerful','dangered'],'danger + -ous.'],
+['form',1,'Adjective form of "beauty":',['beautiful','beautious','beautyful','beautly'],'beauty → beautiful (y→i + ful).'],
+['form',1,'Opposite of "possible":',['impossible','unpossible','dispossible','inpossible'],'im- before p.'],
+['form',2,'Opposite of "legal":',['illegal','unlegal','imlegal','dislegal'],'il- before l.'],
+['form',2,'Adjective form of "nation":',['national','nationful','nationy','nationous'],'nation + -al.'],
+['form',2,'Adjective form of "fool":',['foolish','foolful','foolous','foolable'],'fool + -ish.'],
+['form',3,'Adjective form of "hero":',['heroic','heroful','heroish','heroly'],'hero + -ic.'],
+['advadj',1,'She sings ___.',['sweetly','sweet','sweetest','sweeter'],'Describes the verb "sings" → adverb.'],
+['advadj',1,'The rose smells ___.',['sweet','sweetly','sweetness','sweeten'],'Linking verb "smells" → adjective.'],
+['advadj',2,'He looks ___ today.',['happy','happily','happiness','happier than'],'Linking verb "looks" → adjective.'],
+['advadj',2,'She is a ___ worker.',['hard','hardly','hardness','harden'],'"Hardly" means "almost not".'],
+['advadj',2,'He drives very ___.',['carefully','careful','care','carefulness'],'Describes "drives".'],
+['order',1,'Choose the correct order:',['a beautiful big house','a big beautiful house','a house big beautiful','a beautiful house big'],'Opinion before size.'],
+['order',2,'Choose the correct order:',['a small old wooden box','a wooden old small box','an old small wooden box','a small wooden old box'],'Size → Age → Material.'],
+['order',2,'Choose the correct order:',['a lovely red silk saree','a red lovely silk saree','a silk red lovely saree','a lovely silk red saree'],'Opinion → Colour → Material.'],
+['order',3,'Choose the correct order:',['two big round Indian plates','big two round Indian plates','two Indian big round plates','two round big Indian plates'],'Number → Size → Shape → Origin.'],
+['fewlittle',1,'There is ___ milk in the jug; buy some more.',['little','few','a few','many'],'Milk is uncountable; "little" = almost none.'],
+['fewlittle',2,'___ friends helped me, so I finished the work.',['A few','Few','Little','A little'],'Positive sense, countable.'],
+['fewlittle',2,'___ people are perfect.',['Few','A few','Little','Much'],'Negative sense = hardly any.'],
+['fewlittle',3,'He spent ___ money he had on books.',['the little','little','a few','few'],'"The little" = all the small amount.'],
+['fewlittle',2,'There are ___ students in the hall than yesterday.',['fewer','less','little','lesser'],'Countable → fewer.'],
+['manymuch',1,'How ___ sugar do you want?',['much','many','few','several'],'Sugar is uncountable.'],
+['manymuch',1,'How ___ books do you have?',['many','much','little','less'],'Books are countable.'],
+['manymuch',2,'___ student was given a prize.',['Every','All','Many','Several'],'"Every" + singular noun.'],
+['manymuch',3,'___ of the two girls got a gift.',['Each','Every','All','Both of'],'"Every" is not used for two.'],
+['error',2,'Spot the error: "This is the (a) most cleverest (b) boy in (c) the class (d)."',['(a) most cleverest','(b) boy','(c) in','(d) the class'],'Double superlative; use "cleverest".'],
+['error',2,'Spot the error: "He is (a) senior than (b) me in (c) service (d)."',['(b) senior than','(a) He is','(c) me in','(d) service'],'senior to.'],
+['error',2,'Spot the error: "She has a (a) ten-years-old (b) daughter (c). No error (d)"',['(b) ten-years-old','(a) She has a','(c) daughter','(d) No error'],'Compound adjective takes singular: ten-year-old.'],
+['error',3,'Spot the error: "My (a) elder brother is (b) elder than (c) your brother (d)."',['(b)/(c) elder than','(a) My','(d) your brother','No error'],'Use "older than"; elder is not used with than.'],
+['error',3,'Spot the error: "Her (a) answer is (b) more perfect (c) than mine (d)."',['(c) more perfect','(a) Her','(b) answer is','(d) than mine'],'"Perfect" is absolute; not compared.'],
+['error',3,'Spot the error: "Of the two (a) plans, this is (b) the best (c) one (d)."',['(c) the best','(a) Of the two','(b) plans, this is','(d) one'],'Two things → "the better".'],
+['correct',2,'Choose the correct sentence:',['She looks beautiful.','She looks beautifully.','She look beautiful.','She looks more beautifully.'],'Linking verb + adjective.'],
+['correct',2,'Choose the correct sentence:',['The dog wagged its tail.','The dog wagged it\'s tail.','The dog wagged their tail.','The dog wagged it tail.'],'its = possessive.'],
+['correct',3,'Choose the correct sentence:',['Delhi is one of the largest cities in India.','Delhi is one of the largest city in India.','Delhi is one of the larger city in India.','Delhi is one of largest cities in India.'],'One of the + superlative + plural noun.'],
+['correct',3,'Choose the correct sentence:',['I prefer tea to coffee.','I prefer tea than coffee.','I prefer tea from coffee.','I prefer tea over than coffee.'],'prefer … to.'],
+['tf',1,'True or False: "Many" is used with uncountable nouns.',['False','True'],'Many → countable; much → uncountable.'],
+['tf',1,'True or False: Proper adjectives begin with a capital letter.',['True','False'],'Indian, French, Shakespearean.'],
+['tf',2,'True or False: "Every" can be used for two persons.',['False','True'],'Use "each" or "both" for two.'],
+['tf',2,'True or False: In "That is my pen", "That" is an adjective.',['False','True'],'No noun follows → pronoun.'],
+['clause',2,'Identify the adjective clause: "The boy who won the race is my cousin."',['who won the race','The boy','is my cousin','my cousin'],'It describes "boy" and has a verb.'],
+['clause',3,'Identify the adjective clause: "This is the place where we met."',['where we met','This is','the place','we'],'Describes "place".'],
+['phrase',2,'Identify the adjective phrase: "A man of great wisdom spoke."',['of great wisdom','A man','spoke','great'],'No verb; describes "man".'],
+['phrase',3,'Identify the adjective phrase: "The house on the hill is ours."',['on the hill','The house','is ours','ours'],'Describes which house.'],
+['partic',2,'The lecture was so ___ that I slept.',['boring','bored','bore','bores'],'-ing describes the thing.'],
+['partic',2,'The children were ___ about the trip.',['excited','exciting','excite','excitement'],'-ed describes feelings.'],
+['partic',3,'I was ___ by the news.',['shocked','shocking','shock','shockingly'],'Person\'s feeling → -ed.'],
+['comp',4,'[SSC] Select the correct option: "He is ___ honest to tell a lie."',['too','very','so','much'],'too + adj + to-infinitive = negative.'],
+['comp',4,'[Banking] "The weather is ___ today than it was yesterday."',['worse','worst','more bad','badder'],'bad–worse–worst.'],
+['comp',4,'[SSC] Choose the most appropriate: "She is the ___ of all my friends."',['kindest','kinder','most kinder','kind'],'Superlative for more than two.'],
+['comp',4,'[KPSC/FDA] Replace incorrect part: "Sita is more prettier than Gita."',['prettier','more pretty','most prettiest','pretty'],'Avoid double comparative.'],
+['comp',4,'[Railway] "Ramesh is junior ___ me by two years."',['to','than','from','by'],'junior to.'],
+['comp',4,'[SSC] Antonym of "transparent":',['opaque','clear','lucid','bright'],'Opaque = not see-through.'],
+['comp',4,'[TET] "Iron is ___ useful than gold."',['more','most','much','many'],'more + long adjective + than.'],
+['comp',4,'[Banking] "He gave me ___ advice which was very useful."',['some','a few','many','few'],'Advice is uncountable.'],
+['comp',4,'[SSC CGL] Spot error: "The (a) climate of Bengaluru is (b) better than (c) Chennai (d)."',['(c)/(d) better than Chennai','(a) The','(b) climate of Bengaluru is','No error'],'Compare like with like: "than that of Chennai".'],
+['comp',4,'[UPSC] "Neither of the answers ___ correct."',['is','are','were','have been'],'Neither → singular verb.']
+];
+const TYPES={identify:'Identify the Adjective',type:'Adjective Type',degree:'Degrees of Comparison',form:'Word Formation',advadj:'Adjective or Adverb',order:'Order of Adjectives',fewlittle:'Few/Little',manymuch:'Many/Much/Each/Every',error:'Error Spotting',correct:'Sentence Correction',tf:'True/False',clause:'Adjective Clause',phrase:'Adjective Phrase',partic:'Participial',comp:'Competitive Exam'};
+const Q=QR.map((r,i)=>({id:i,type:r[0],lv:r[1],q:r[2],a:r[3][0],opts:r[3],ex:r[4]}));
+// generated items from banks
+BANK.forEach((b,i)=>{const others=BANK.filter(x=>x!==b);
+ Q.push({id:'c'+i,type:'degree',lv:2,q:`Comparative of "${b[0]}":`,a:b[1],opts:[b[1],b[2],b[0]+'er'===b[1]?'more '+b[0]:b[0]+'er',shuffle(others)[0][1]].filter((v,k,a)=>a.indexOf(v)===k),ex:`${b[0]} – ${b[1]} – ${b[2]}`});
+ Q.push({id:'s'+i,type:'degree',lv:2,q:`Superlative of "${b[0]}":`,a:b[2],opts:[b[2],b[1],'most '+b[1],shuffle(others)[0][2]].filter((v,k,a)=>a.indexOf(v)===k),ex:`${b[0]} – ${b[1]} – ${b[2]}`})});
+FORM.forEach((f,i)=>{const o=shuffle(FORM.filter(x=>x!==f)).slice(0,3).map(x=>f[0]+x[2].replace(/-/g,''));
+ Q.push({id:'f'+i,type:'form',lv:f[2].endsWith('-')?2:1,q:f[2].endsWith('-')?`Opposite of "${f[0]}":`:`Adjective form of "${f[0]}":`,a:f[1],opts:[f[1],...o.filter(x=>x!==f[1])].slice(0,4),ex:`${f[0]} + ${f[2]} → ${f[1]}`})});
+
+/* ================= NAVIGATION ================= */
+const MENU=[['learn','📘','Learn Adjectives','ವಿಶೇಷಣ ಕಲಿಯಿರಿ'],['types','🗂️','Types of Adjectives','ವಿಶೇಷಣದ ವಿಧಗಳು'],['identify','🔍','Adjective Identification','ಗುರುತಿಸುವಿಕೆ'],['formation','🛠️','Adjective Formation','ವಿಶೇಷಣ ರಚನೆ'],['degrees','📶','Degrees of Comparison','ಹೋಲಿಕೆಯ ಮಟ್ಟ'],['order','📏','Order of Adjectives','ವಿಶೇಷಣ ಕ್ರಮ'],['advadj','⚔️','Adjective vs Adverb','ವಿಶೇಷಣ vs ಕ್ರಿಯಾವಿಶೇಷಣ'],['pron','🔊','Pronunciation','ಉಚ್ಚಾರಣೆ'],['practice','✍️','Practice','ಅಭ್ಯಾಸ'],['worksheet','📄','Worksheets','ವರ್ಕ್‌ಶೀಟ್'],['quiz','🎯','Quiz','ರಸಪ್ರಶ್ನೆ'],['comp','🏆','Competitive Exam Zone','ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆ'],['flash','🃏','Flashcards','ಫ್ಲ್ಯಾಶ್‌ಕಾರ್ಡ್'],['mist','📕','Mistake Book','ತಪ್ಪುಗಳ ಪುಸ್ತಕ'],['progress','📈','My Progress','ನನ್ನ ಪ್ರಗತಿ'],['revision','🔁','Smart Revision','ಪುನರಾವರ್ತನೆ'],['paper','🧾','Practice Papers','ಅಭ್ಯಾಸ ಪತ್ರಿಕೆ'],['grand','🎓','Grand Test','ಮಹಾ ಪರೀಕ್ಷೆ'],['daily','📅','Daily Challenge','ದೈನಂದಿನ ಸವಾಲು'],['bank','📚','Reference Bank','ಪದ ಭಂಡಾರ'],['bm','🔖','Bookmarks','ಬುಕ್‌ಮಾರ್ಕ್'],['settings','⚙️','Settings / Reset','ಸೆಟ್ಟಿಂಗ್']];
+function back(){return `<button class="btn alt sm back noprint" onclick="go('home')">← ${t('Home','ಮುಖಪುಟ')}</button>`}
+function go(v,arg){$('search').value='';window.scrollTo(0,0);speechSynthesis&&speechSynthesis.cancel&&speechSynthesis.cancel();(V[v]||V.home)(arg);location.hash=v}
+const V={};
+
+V.home=()=>{const acc=S.att?Math.round(S.cor/S.att*100):0;const lv=Object.keys(S.done).length;
+app.innerHTML=`<div class="hero"><h1>${t('WELCOME TO ADJECTIVE MASTERY','ವಿಶೇಷಣ ಪಾಂಡಿತ್ಯಕ್ಕೆ ಸ್ವಾಗತ')}</h1>
+<p>${t('From beginner to competitive-exam level — learn, practise, test and revise.','ಆರಂಭದಿಂದ ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷಾ ಮಟ್ಟದವರೆಗೆ — ಕಲಿಯಿರಿ, ಅಭ್ಯಾಸ ಮಾಡಿ, ಪರೀಕ್ಷಿಸಿ.')}</p>
+<p>⭐ ${S.xp} XP • 🔥 ${S.streak} ${t('day streak','ದಿನ')} • ✅ ${lv}/${L.length} ${t('lessons','ಪಾಠಗಳು')} • 🎯 ${acc}%</p></div>
+<div class="grid">${MENU.map(m=>`<button class="tile" onclick="go('${m[0]}')"><div class="ic">${m[1]}</div><b>${t(m[2],m[3])}</b>${KN()?`<span>${m[2]}</span>`:''}</button>`).join('')}</div>
+<div class="card"><h3>${t('Learning Roadmap','ಕಲಿಕೆಯ ಮಾರ್ಗ')}</h3><div class="roadmap">${['Pronounce','Identify','Learn Types','Build','Compare','Practise','Quiz','Analyse Mistakes','Revise','Practice Paper','Competitive','Grand Test','MASTER'].map(x=>`<span>${x}</span>`).join('→')}</div></div>`};
+
+/* ---------- LESSON RENDER ---------- */
+function lessonHTML(l){const bm=S.bm.includes(l.id);
+return `<div class="card" id="L_${l.id}"><div class="row" style="justify-content:space-between"><h2 style="margin:0">${l.ic} ${l.en}${KN()?` <span class="tag">/ ${l.kn}</span>`:''}</h2>
+<div class="row noprint">${sp(l.en)}<button class="btn sm alt" onclick="toggleBm('${l.id}',this)">${bm?'🔖 Saved':'🔖 Save'}</button></div></div>
+<p>${esc(l.d)}</p>${l.dk&&KN()?`<div class="kn">${l.dk}</div>`:''}
+${l.ex.map(e=>`<div class="ex">${hl(e)} <span class="noprint">${sp(e.replace(/[\[\]]/g,''))}</span></div>`).join('')}
+${l.tip?`<div class="kn">💡 ${esc(t(l.tip,l.tipk||l.tip))}</div>`:''}
+<div class="row noprint"><button class="btn sm" onclick="markDone('${l.id}',this)">${S.done[l.id]?'✅ Completed':'Mark as completed'}</button>
+<button class="btn sm alt" onclick="miniQuiz('${l.id}')">Quick check</button></div><div id="mq_${l.id}"></div></div>`}
+function markDone(id,b){S.done[id]=1;S.xp+=10;save();b.textContent='✅ Completed';toast('+10 XP')}
+function toggleBm(id,b){const i=S.bm.indexOf(id);if(i>-1)S.bm.splice(i,1);else S.bm.push(id);save();b.textContent=i>-1?'🔖 Save':'🔖 Saved'}
+const LMAP={quality:'type',quantity:'type',number:'type',demo:'type',poss:'type',interrog:'type',distrib:'type',proper:'type',compound:'type',particip:'partic',attpred:'type',coord:'order',formation:'form',degrees:'degree',irregular:'degree',structures:'degree',order:'order',advadj:'advadj',clause:'clause',fewlittle:'fewlittle',manymuch:'manymuch',errors:'error',confusing:'correct',what:'identify',identify:'identify'};
+function miniQuiz(id){const qs=shuffle(Q.filter(q=>q.type===LMAP[id])).slice(0,3);runQuiz(qs,'mq_'+id,{inline:true})}
+function showLessons(ids,title){app.innerHTML=back()+`<h1>${title}</h1>`+L.filter(l=>ids.includes(l.id)).map(lessonHTML).join('')}
+V.learn=()=>showLessons(['what','identify','attpred','clause','errors','confusing'],t('Learn Adjectives','ವಿಶೇಷಣ ಕಲಿಯಿರಿ'));
+V.types=()=>{const ids=['quality','quantity','number','demo','poss','interrog','distrib','proper','compound','particip','attpred','coord'];
+app.innerHTML=back()+`<h1>${t('Types of Adjectives','ವಿಶೇಷಣದ ವಿಧಗಳು')}</h1><div class="tabs noprint">${ids.map(i=>{const l=L.find(x=>x.id===i);return `<button class="btn sm alt" onclick="document.getElementById('L_${i}').scrollIntoView({behavior:'smooth'})">${l.ic} ${l.en.replace('Adjectives','').trim()}</button>`}).join('')}</div>`+ids.map(i=>lessonHTML(L.find(x=>x.id===i))).join('')};
+V.formation=()=>{showLessons(['formation'],t('Adjective Formation','ವಿಶೇಷಣ ರಚನೆ'));app.insertAdjacentHTML('beforeend',`<div class="card"><h3>Word Formation Table</h3><table><tr><th>Word</th><th>Suffix/Prefix</th><th>Adjective</th></tr>${FORM.map(f=>`<tr><td>${f[0]}</td><td>${f[2]}</td><td><b>${f[1]}</b> ${sp(f[1])}</td></tr>`).join('')}</table></div>`)};
+V.degrees=()=>{showLessons(['degrees','irregular','structures','manymuch','fewlittle'],t('Degrees of Comparison','ಹೋಲಿಕೆಯ ಮಟ್ಟ'));
+app.children[2].insertAdjacentHTML('beforebegin',`<div class="card noprint"><h3>🧮 Comparison Builder</h3><p class="tag">Type any adjective to see its three degrees.</p>
+<div class="row"><input id="cb" placeholder="e.g. happy, big, beautiful" oninput="buildComp()"></div><div id="cbo"></div>
+<h3>🔄 Sentence Transformer</h3><p class="tag">Superlative → Comparative → Positive</p>
+<div class="row"><input id="tn" placeholder="Name (Ravi)" style="width:110px"><input id="ta" placeholder="adjective (tall)" style="width:130px"><input id="tg" placeholder="group (boy in the class)" style="width:190px"><button class="btn sm" onclick="transform()">Transform</button></div><div id="tro"></div></div>`)};
+function degreesOf(w){w=w.trim().toLowerCase();if(!w)return null;const b=BANK.find(x=>x[0]===w);if(b)return b;
+ let c,s;if(/e$/.test(w)&&w.length<7){c=w+'r';s=w+'st'}else if(/[^aeiou]y$/.test(w)&&w.length<8){c=w.slice(0,-1)+'ier';s=w.slice(0,-1)+'iest'}
+ else if(/^[^aeiou]*[aeiou][^aeiouwxy]$/.test(w)){c=w+w.slice(-1)+'er';s=w+w.slice(-1)+'est'}
+ else if(w.length<=5||/(ow|er)$/.test(w)&&w.length<7){c=w+'er';s=w+'est'}else{c='more '+w;s='most '+w}return [w,c,s]}
+function buildComp(){const d=degreesOf($('cb').value);$('cbo').innerHTML=d?`<table><tr><th>Positive</th><th>Comparative</th><th>Superlative</th></tr><tr><td>${d[0]} ${sp(d[0])}</td><td>${d[1]} ${sp(d[1])}</td><td>the ${d[2]} ${sp(d[2])}</td></tr></table><div class="ex">This is ${d[0]}. • This is ${d[1]} than that. • This is the ${d[2]} of all.</div>`:''}
+function transform(){const n=$('tn').value||'Ravi',a=$('ta').value||'tall',g=($('tg').value||'boy in the class').trim(),d=degreesOf(a),noun=g.split(' ')[0],rest=g.split(' ').slice(1).join(' ');
+ $('tro').innerHTML=`<div class="ex"><b>Superlative:</b> ${n} is the ${d[2]} ${g}.</div><div class="ex"><b>Comparative:</b> ${n} is ${d[1]} than any other ${noun} ${rest}.</div><div class="ex"><b>Positive:</b> No other ${noun} ${rest} is as ${d[0]} as ${n}.</div>`}
+V.order=()=>{showLessons(['order','coord'],t('Order of Adjectives','ವಿಶೇಷಣ ಕ್ರಮ'));
+app.insertAdjacentHTML('beforeend',`<div class="card noprint"><h3>🧱 Adjective Order Builder</h3><p class="tag">Tap words in the correct order (OSASCOMP).</p><div id="ob"></div></div>`);orderGame()};
+const ORDERS=[['lovely','small','old','round','brown','Indian','wooden','dining','table'],['beautiful','big','new','blue','Italian','car'],['nice','little','white','cotton','shirt'],['ugly','huge','old','grey','stone','building'],['delicious','fresh','green','Mysore','mango']];
+function orderGame(){const ord=ORDERS[Math.floor(Math.random()*ORDERS.length)];let picked=[];const noun=ord[ord.length-1],adjs=ord.slice(0,-1);
+ const draw=()=>{$('ob').innerHTML=`<div>${shuffle.s||''}</div><div style="min-height:40px" class="ex">${picked.join(' ')||'…'} <b>${noun}</b></div>${window._ob.map(w=>`<span class="word ${picked.includes(w)?'sel':''}" onclick="obPick('${w}')">${w}</span>`).join('')}<div class="row"><button class="btn sm" onclick="obCheck()">Check</button><button class="btn sm alt" onclick="orderGame()">New</button></div><div id="obf"></div>`};
+ window._ob=shuffle(adjs);window.obPick=w=>{const i=picked.indexOf(w);if(i>-1)picked.splice(i,1);else picked.push(w);draw()};
+ window.obCheck=()=>{const ok=picked.join(' ')===adjs.join(' ');$('obf').innerHTML=`<div class="fb ${ok?'ok':'no'}">${ok?'✅ Correct!':'❌ Correct order: '+adjs.join(' ')+' '+noun}</div>`;if(ok){S.xp+=5;save()}};draw()}
+V.advadj=()=>{showLessons(['advadj','particip'],t('Adjective vs Adverb','ವಿಶೇಷಣ vs ಕ್ರಿಯಾವಿಶೇಷಣ'));app.insertAdjacentHTML('beforeend','<div class="card"><h3>Quick Challenge</h3><div id="aq"></div></div>');runQuiz(shuffle(Q.filter(q=>q.type==='advadj'||q.type==='partic')).slice(0,6),'aq',{inline:true})};
+
+/* ---------- IDENTIFICATION ENGINE ---------- */
+const IDS=[['The','tall','boy','has','a','red','bicycle','.',[1,5]],['She','bought','three','fresh','mangoes','.',[2,3]],['My','brother','is','very','clever','.',[0,4]],['This','old','house','looks','beautiful','.',[0,1,4]],['Which','book','did','you','read','?',[0]],['Every','student','must','bring','his','own','lunch','.',[0,4,5]],['The','tired','farmer','slept','peacefully','.',[1]],['Indian','food','is','spicy','and','tasty','.',[0,3,5]]];
+let idIdx=0;
+V.identify=()=>{showLessons(['identify'],t('Adjective Identification','ವಿಶೇಷಣ ಗುರುತಿಸುವಿಕೆ'));app.insertAdjacentHTML('beforeend',`<div class="card"><h3>🎯 Identification Engine</h3><p class="tag">Tap ALL the adjectives in the sentence, then press Check.</p><div id="ide"></div></div><div class="card"><h3>More practice</h3><div id="idq"></div></div>`);idRound();runQuiz(shuffle(Q.filter(q=>q.type==='identify')).slice(0,5),'idq',{inline:true})};
+function idRound(){const s=IDS[idIdx%IDS.length],ans=s[s.length-1],words=s.slice(0,-1);let sel=new Set();
+ const draw=(chk)=>{$('ide').innerHTML=words.map((w,i)=>`<span class="word ${chk?(ans.includes(i)?(sel.has(i)?'ok':'miss'):(sel.has(i)?'sel':'')):(sel.has(i)?'sel':'')}" onclick="idT(${i})">${w}</span>`).join('')+`<div class="row"><button class="btn sm" onclick="idC()">Check</button><button class="btn sm alt" onclick="idIdx++;idRound()">Next sentence</button></div>${chk?`<div class="fb ${[...sel].sort().join()===ans.join()?'ok':'no'}">${[...sel].sort().join()===ans.join()?'✅ Perfect!':'Adjectives: '+ans.map(i=>words[i]).join(', ')}</div>`:''}`};
+ window.idT=i=>{sel.has(i)?sel.delete(i):sel.add(i);draw()};window.idC=()=>{draw(true);if([...sel].sort().join()===ans.join()){S.xp+=5;save()}};draw()}
+
+/* ---------- PRONUNCIATION ---------- */
+V.pron=()=>{const sup='speechSynthesis' in window;
+app.innerHTML=back()+`<h1>🔊 ${t('Pronunciation','ಉಚ್ಚಾರಣೆ')}</h1>${sup?'':'<div class="fb no">Your browser does not support speech. Try Chrome on Android/desktop.</div>'}
+<div class="card row"><b>Speed:</b>${[['Slow',.6],['Normal',1],['Fast',1.4]].map(([n,r])=>`<button class="btn sm ${rate===r?'':'alt'}" onclick="rate=${r};V.pron()">${n}</button>`).join('')}<button class="btn sm alt" onclick="lastSpoken&&speak(lastSpoken)">↻ Replay</button></div>
+<div class="grid">${PRON.map(p=>`<button class="tile" onclick="speak('${p}')"><div class="ic">🔊</div><b>${p}</b><span>Listen</span></button>`).join('')}</div>
+<h2>Common adjectives</h2><div>${BANK.map(b=>`<span class="word" onclick="speak('${b[0]}, ${b[1]}, ${b[2]}')">${b[0]}</span>`).join('')}</div>`};
+
+/* ================= QUIZ ENGINE ================= */
+function recordAns(q,ok,chosen){S.att++;if(ok){S.cor++;S.xp+=2}const ts=S.typeStats[q.type]||(S.typeStats[q.type]=[0,0]);ts[0]++;if(ok)ts[1]++;
+ if(!ok&&!S.mist.find(m=>m.id===q.id))S.mist.push({id:q.id,chosen,d:today()});if(ok){const i=S.mist.findIndex(m=>m.id===q.id);if(i>-1&&S._rev)S.mist.splice(i,1)}save()}
+function runQuiz(qs,target,o={}){if(!qs.length){$(target).innerHTML='<p>No questions available.</p>';return}
+ let i=0,score=0,start=Date.now(),wrong=[],timer=null,left=o.time||0;
+ const box=$(target);
+ const tick=()=>{if(!o.time)return;left--;const tEl=$(target+'_t');if(tEl)tEl.textContent=`⏱ ${Math.floor(left/60)}:${String(left%60).padStart(2,'0')}`;if(left<=0){clearInterval(timer);finish()}};
+ if(o.time)timer=setInterval(tick,1000);
+ const show=()=>{const q=qs[i];const opts=shuffle(q.opts);
+  box.innerHTML=`<div class="${o.inline?'':'card'}">${o.time?`<div class="row" style="justify-content:space-between"><span class="chip" id="${target}_t">⏱</span><span class="chip">Score ${score}</span></div>`:''}
+  <div class="tag">Q ${i+1}/${qs.length} • ${TYPES[q.type]||''} • ${['','Easy','Medium','Hard','Competitive'][q.lv]}</div><h3>${esc(q.q)} ${sp(q.q.replace(/\[.*?\]/,''))}</h3>
+  ${opts.map(op=>`<button class="opt" data-v="${esc(op)}">${esc(op)}</button>`).join('')}<div id="${target}_f"></div></div>`;
+  box.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(box._lock)return;box._lock=1;const v=b.dataset.v,ok=v===q.a;
+   box.querySelectorAll('.opt').forEach(x=>{if(x.dataset.v===q.a)x.classList.add('ok')});if(!ok){b.classList.add('no');wrong.push(q)}else score++;
+   recordAns(q,ok,v);
+   $(target+'_f').innerHTML=`<div class="fb ${ok?'ok':'no'}">${ok?'✅ Correct!':'❌ Answer: <b>'+esc(q.a)+'</b>'}<br>${esc(q.ex)}</div><button class="btn" onclick="this.parentNode.parentNode._next&&0">Next →</button>`;
+   $(target+'_f').querySelector('.btn').onclick=()=>{box._lock=0;i++;i<qs.length?show():finish()}})};
+ const finish=()=>{clearInterval(timer);box._lock=0;const pct=Math.round(score/qs.length*100),secs=Math.round((Date.now()-start)/1000);
+  if(o.name){S.tests.push({n:o.name,s:score,t:qs.length,d:today()});save()}if(o.onDone)o.onDone(score);
+  const weak={};wrong.forEach(q=>weak[q.type]=(weak[q.type]||0)+1);
+  box.innerHTML=`<div class="card"><h2>${pct>=80?'🏅 Excellent!':pct>=50?'👍 Good effort!':'💪 Keep practising!'}</h2>
+  <div class="stat"><div><b>${score}/${qs.length}</b>Score</div><div><b>${pct}%</b>Accuracy</div><div><b>${secs}s</b>Time</div></div>
+  ${wrong.length?`<h3>Weak areas</h3>${Object.keys(weak).map(k=>`<span class="chip">${TYPES[k]} (${weak[k]})</span>`).join('')}<h3>Review</h3>${wrong.map(q=>`<div class="ex"><b>${esc(q.q)}</b><br>✔ ${esc(q.a)} — ${esc(q.ex)}</div>`).join('')}`:''}
+  <div class="row noprint"><button class="btn" onclick="go('${o.again||'quiz'}')">Try again</button><button class="btn alt" onclick="go('mist')">Mistake Book</button></div></div>`};
+ show()}
+function pickQs(n,f={}){let p=Q.filter(q=>(!f.type||f.type==='all'||q.type===f.type)&&(!f.lv||f.lv==0||q.lv==f.lv));return shuffle(p).slice(0,n)}
+
+V.quiz=()=>{app.innerHTML=back()+`<h1>🎯 ${t('Quiz','ರಸಪ್ರಶ್ನೆ')}</h1><div class="card noprint"><div class="row">
+<select id="qt"><option value="all">All topics</option>${Object.entries(TYPES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select>
+<select id="ql"><option value="0">All levels</option><option value="1">Easy</option><option value="2">Medium</option><option value="3">Hard</option><option value="4">Competitive</option></select>
+<select id="qn"><option>10</option><option>5</option><option>20</option></select>
+<label><input type="checkbox" id="qtm"> Timed</label><button class="btn" onclick="startQuiz()">Start</button></div></div><div id="qz"></div>`};
+function startQuiz(){const n=+$('qn').value;runQuiz(pickQs(n,{type:$('qt').value,lv:$('ql').value}),'qz',{time:$('qtm').checked?n*30:0,name:'Quiz'})}
+V.practice=()=>{app.innerHTML=back()+`<h1>✍️ ${t('Practice','ಅಭ್ಯಾಸ')}</h1><p class="tag">Choose an activity. Instant feedback after every answer.</p><div class="grid">${Object.entries(TYPES).map(([k,v])=>`<button class="tile" onclick="practice('${k}')"><b>${v}</b><span>${Q.filter(q=>q.type===k).length} questions</span></button>`).join('')}
+<button class="tile" onclick="go('identify')"><b>Tap-the-Adjective</b><span>Interactive</span></button><button class="tile" onclick="go('order')"><b>Order Builder</b><span>Interactive</span></button><button class="tile" onclick="matchGame()"><b>Match the Following</b><span>Interactive</span></button><button class="tile" onclick="fillGame()"><b>Fill in the Blank (typed)</b><span>Interactive</span></button></div><div id="pr"></div>`};
+function practice(k){runQuiz(pickQs(10,{type:k}),'pr',{again:'practice'});$('pr').scrollIntoView({behavior:'smooth'})}
+function matchGame(){const set=shuffle(BANK).slice(0,5);let left=null,done=0;const R=shuffle(set);
+ $('pr').innerHTML=`<div class="card"><h3>Match the positive with its superlative</h3><div class="row" style="align-items:flex-start"><div style="flex:1">${set.map(b=>`<span class="word" data-l="${b[0]}">${b[0]}</span><br>`).join('')}</div><div style="flex:1">${R.map(b=>`<span class="word" data-r="${b[0]}">${b[2]}</span><br>`).join('')}</div></div><div id="mf"></div></div>`;
+ $('pr').querySelectorAll('[data-l]').forEach(e=>e.onclick=()=>{$('pr').querySelectorAll('[data-l]').forEach(x=>x.classList.remove('sel'));if(!e.classList.contains('ok')){e.classList.add('sel');left=e}});
+ $('pr').querySelectorAll('[data-r]').forEach(e=>e.onclick=()=>{if(!left)return;if(left.dataset.l===e.dataset.r){left.className='word ok';e.className='word ok';done++;if(done===5){$('mf').innerHTML='<div class="fb ok">✅ All matched! +10 XP</div>';S.xp+=10;save()}}else{toast('Try again')}left=null});
+ $('pr').scrollIntoView({behavior:'smooth'})}
+function fillGame(){const b=BANK[Math.floor(Math.random()*BANK.length)],k=Math.random()<.5?1:2;
+ $('pr').innerHTML=`<div class="card"><h3>Type the ${k===1?'comparative':'superlative'} of "<b>${b[0]}</b>"</h3><input id="fg" autocomplete="off"><button class="btn" onclick="fgC()">Check</button><button class="btn alt" onclick="fillGame()">Next</button><div id="fgf"></div></div>`;
+ window.fgC=()=>{const v=$('fg').value.trim().toLowerCase(),ok=b[k].split('/').includes(v)||b[k]===v;$('fgf').innerHTML=`<div class="fb ${ok?'ok':'no'}">${ok?'✅ Correct!':'❌ '+b[k]}</div>`;S.att++;if(ok){S.cor++;S.xp+=2}save()};$('pr').scrollIntoView({behavior:'smooth'})}
+V.comp=()=>{app.innerHTML=back()+`<h1>🏆 ${t('Competitive Exam Zone','ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆ')}</h1><div class="card"><p>Exam-style questions for SSC, Banking, Railways, KPSC, TET, UPSC and more. Focus areas: error spotting, degrees, few/little, each/every, superior/senior + to.</p>
+<div class="kn">💡 Shortcut rules: double comparative ✗ • "of the two" → the + comparative • "than any other" + singular • absolute adjectives (perfect, unique, complete) not compared • preferable/superior/junior + to.</div>
+<button class="btn" onclick="runQuiz(shuffle(Q.filter(q=>q.lv>=3||q.type==='error')).slice(0,15),'cz',{time:600,name:'Competitive',again:'comp'})">Start 15-Q timed set (10 min)</button></div><div id="cz"></div>`};
+V.grand=()=>{app.innerHTML=back()+`<h1>🎓 ${t('Grand Adjective Test','ಮಹಾ ಪರೀಕ್ಷೆ')}</h1><div class="card"><p>40 questions from all topics and all levels • 30 minutes • Result saved to your progress.</p><button class="btn" onclick="this.parentNode.remove();runQuiz(grandSet(),'gt',{time:1800,name:'Grand Test',again:'grand'})">Begin Grand Test</button></div><div id="gt"></div>`};
+function grandSet(){let out=[];Object.keys(TYPES).forEach(k=>out.push(...pickQs(3,{type:k})));return shuffle(out).slice(0,40)}
+V.daily=()=>{const d=today();let seed=[...d].reduce((a,c)=>a*31+c.charCodeAt(0)>>>0,7);const r=()=>(seed=seed*1103515245+12345>>>0)/4294967296;
+ const qs=Q.slice().sort(()=>r()-.5).slice(0,5);const done=S.daily[d];
+ app.innerHTML=back()+`<h1>📅 ${t('Daily Adjective Challenge','ದೈನಂದಿನ ಸವಾಲು')}</h1><p class="tag">${d} • 5 new questions every day ${done!=null?'• Today: '+done+'/5 ✔':''}</p><div id="dc"></div>`;
+ runQuiz(qs,'dc',{again:'daily',onDone:s=>{S.daily[d]=s;S.xp+=5;save()}})};
+
+/* ---------- MISTAKES / REVISION / FLASH / BOOKMARKS ---------- */
+const QBYID=id=>Q.find(q=>q.id===id);
+V.mist=()=>{const ms=S.mist.map(m=>({...m,q:QBYID(m.id)})).filter(m=>m.q);
+app.innerHTML=back()+`<h1>📕 ${t('Mistake Book','ತಪ್ಪುಗಳ ಪುಸ್ತಕ')}</h1><p class="tag">${ms.length} questions to review. Answer them correctly in revision to remove them.</p>
+<div class="row noprint"><button class="btn" onclick="reviseMist()">Practise my mistakes</button><button class="btn alt" onclick="if(confirm('Clear mistake book?')){S.mist=[];save();V.mist()}">Clear</button></div>
+${ms.map(m=>`<div class="card"><b>${esc(m.q.q)}</b><br>❌ Your answer: ${esc(m.chosen)}<br>✔ Correct: <b>${esc(m.q.a)}</b><br><span class="tag">${esc(m.q.ex)} • ${TYPES[m.q.type]} • ${m.d}</span></div>`).join('')||'<div class="card">🎉 No mistakes yet!</div>'}<div id="mr"></div>`};
+function reviseMist(){S._rev=1;runQuiz(shuffle(S.mist.map(m=>QBYID(m.id)).filter(Boolean)).slice(0,10),'mr',{again:'mist',onDone:()=>{S._rev=0;save()}});$('mr').scrollIntoView()}
+V.revision=()=>{const weak=Object.entries(S.typeStats).map(([k,v])=>[k,v[1]/v[0]]).sort((a,b)=>a[1]-b[1]).slice(0,3).map(x=>x[0]);
+app.innerHTML=back()+`<h1>🔁 ${t('Smart Revision','ಪುನರಾವರ್ತನೆ')}</h1><div class="card"><h3>One-page summary</h3><table>
+<tr><th>Type</th><th>Question it answers</th><th>Example</th></tr>
+<tr><td>Quality</td><td>What kind?</td><td>honest, red</td></tr><tr><td>Quantity</td><td>How much?</td><td>some, little, enough</td></tr><tr><td>Number</td><td>How many / which order?</td><td>two, first, many</td></tr><tr><td>Demonstrative</td><td>Which?</td><td>this, those</td></tr><tr><td>Possessive</td><td>Whose?</td><td>my, their</td></tr><tr><td>Interrogative</td><td>asks</td><td>what, which, whose</td></tr><tr><td>Distributive</td><td>one by one</td><td>each, every, either, neither</td></tr></table>
+<div class="kn">OSASCOMP • -er/-est for short words, more/most for long • few/little = negative, a few/a little = positive • linking verb + adjective</div></div>
+<div class="card"><h3>Revise your weak areas</h3>${weak.length?weak.map(k=>`<span class="chip">${TYPES[k]}</span>`).join(''):'<p>Attempt some quizzes first.</p>'}<br><button class="btn" onclick="runQuiz(${weak.length?'shuffle(Q.filter(q=>'+JSON.stringify(weak)+'.includes(q.type))).slice(0,10)':'pickQs(10)'},'rv',{again:'revision'})">Start revision set</button></div><div id="rv"></div>`};
+let fi=0,fset=[];
+V.flash=()=>{fset=shuffle([...BANK.map(b=>({f:b[0],b:`${b[1]} • ${b[2]}<br><span class="tag">${b[3]}</span>`})),...L.map(l=>({f:l.en,b:esc(l.d.slice(0,160))+'…'}))]);fi=0;drawFlash()};
+function drawFlash(fl){const c=fset[fi];app.innerHTML=back()+`<h1>🃏 ${t('Flashcards','ಫ್ಲ್ಯಾಶ್‌ಕಾರ್ಡ್')}</h1><p class="tag">${fi+1}/${fset.length} • tap card to flip</p><div class="card flash" onclick="drawFlash(${!fl})">${fl?c.b:'<b>'+esc(c.f)+'</b>'}</div><div class="row"><button class="btn alt" onclick="fi=(fi-1+fset.length)%fset.length;drawFlash()">← Prev</button>${sp(c.f)}<button class="btn" onclick="fi=(fi+1)%fset.length;drawFlash()">Next →</button></div>`}
+V.bm=()=>{app.innerHTML=back()+`<h1>🔖 ${t('Bookmarks','ಬುಕ್‌ಮಾರ್ಕ್')}</h1>`+(L.filter(l=>S.bm.includes(l.id)).map(lessonHTML).join('')||'<div class="card">No bookmarks yet. Tap "🔖 Save" on any lesson.</div>')};
+V.bank=()=>{app.innerHTML=back()+`<h1>📚 ${t('Adjective Reference Bank','ಪದ ಭಂಡಾರ')}</h1><input placeholder="Filter…" oninput="[...document.querySelectorAll('#bt tr')].slice(1).forEach(r=>r.style.display=r.textContent.toLowerCase().includes(this.value.toLowerCase())?'':'none')"><div class="card"><table id="bt"><tr><th>Positive</th><th>Comparative</th><th>Superlative</th><th>ಕನ್ನಡ</th><th></th></tr>${BANK.map(b=>`<tr><td>${b[0]}</td><td>${b[1]}</td><td>${b[2]}</td><td>${b[3]}</td><td>${sp(b.slice(0,3).join(', '))}</td></tr>`).join('')}</table></div>`};
+
+/* ---------- WORKSHEET / PAPER ---------- */
+V.worksheet=()=>{app.innerHTML=back()+`<h1>📄 ${t('Worksheet Generator','ವರ್ಕ್‌ಶೀಟ್')}</h1><div class="card noprint"><div class="row">
+<select id="wt"><option value="all">Mixed topics</option>${Object.entries(TYPES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select>
+<select id="wl"><option value="0">All levels</option><option value="1">Easy</option><option value="2">Medium</option><option value="3">Hard</option><option value="4">Competitive</option></select>
+<select id="wn"><option>10</option><option>15</option><option>20</option><option>25</option></select><button class="btn" onclick="genWS()">Generate</button><button class="btn alt" onclick="window.print()">🖨 Print</button></div></div><div id="ws"></div>`};
+function sheet(qs,title,meta){return `<div class="card"><h2 style="text-align:center">KS LEARNING CENTER<br><small>${title}</small></h2><p>Name: ____________ Class: ______ Date: ______ ${meta||''}</p>
+${qs.map((q,i)=>`<div class="ws-q"><b>${i+1}.</b> ${esc(q.q)}<br>${shuffle(q.opts).map((o,j)=>`(${'abcd'[j]}) ${esc(o)}`).join(' &nbsp; ')}</div>`).join('')}
+<div class="ans-key"><h3>Answer Key</h3>${qs.map((q,i)=>`${i+1}. ${esc(q.a)}`).join(' • ')}</div></div>`}
+function genWS(){const qs=pickQs(+$('wn').value,{type:$('wt').value,lv:$('wl').value});$('ws').innerHTML=sheet(qs,'Adjective Worksheet – '+($('wt').value==='all'?'Mixed':TYPES[$('wt').value]))}
+V.paper=()=>{app.innerHTML=back()+`<h1>🧾 ${t('Practice Paper Generator','ಅಭ್ಯಾಸ ಪತ್ರಿಕೆ')}</h1><div class="card noprint"><div class="row">
+${[['Class Test','20 marks',20],['Unit Test','30 marks',30],['Competitive Mock','40 marks',40]].map(([n,m,c])=>`<button class="btn" onclick="genPaper('${n}',${c})">${n} (${m})</button>`).join('')}<button class="btn alt" onclick="window.print()">🖨 Print</button></div></div><div id="pp"></div>`};
+function genPaper(n,c){let qs=[];const ks=Object.keys(TYPES);while(qs.length<c){const q=pickQs(1,{type:ks[qs.length%ks.length]})[0];if(q&&!qs.includes(q))qs.push(q)}$('pp').innerHTML=sheet(qs,'Adjective '+n,`Max marks: ${c} • Time: ${c*1.5} min`)}
+
+/* ---------- PROGRESS / SETTINGS ---------- */
+V.progress=()=>{const acc=S.att?Math.round(S.cor/S.att*100):0,lv=Object.keys(S.done).length,lvl=S.xp<100?'Beginner':S.xp<300?'Learner':S.xp<700?'Skilled':S.xp<1500?'Expert':'Adjective Master';
+ const badges=[[S.att>=1,'🌱 First Step'],[lv>=5,'📘 Reader'],[lv>=L.length,'🎓 All Lessons'],[S.cor>=50,'🎯 Sharp Shooter'],[S.streak>=3,'🔥 3-Day Streak'],[S.tests.some(x=>x.n==='Grand Test'&&x.s/x.t>=.8),'🏆 Grand Champion']];
+app.innerHTML=back()+`<h1>📈 ${t('My Progress','ನನ್ನ ಪ್ರಗತಿ')}</h1><div class="stat"><div><b>${S.xp}</b>XP</div><div><b>${lvl}</b>Level</div><div><b>${acc}%</b>Accuracy</div><div><b>${S.att}</b>Attempted</div><div><b>${lv}/${L.length}</b>Lessons</div><div><b>${S.streak}</b>Day streak</div><div><b>${S.mist.length}</b>Mistakes</div><div><b>${S.bm.length}</b>Bookmarks</div></div>
+<div class="card"><h3>Lesson completion</h3><div class="bar"><i style="width:${lv/L.length*100}%"></i></div></div>
+<div class="card"><h3>Topic accuracy</h3>${Object.entries(S.typeStats).map(([k,v])=>`<div>${TYPES[k]} — ${Math.round(v[1]/v[0]*100)}% (${v[1]}/${v[0]})<div class="bar"><i style="width:${v[1]/v[0]*100}%"></i></div></div>`).join('')||'<p>No attempts yet.</p>'}</div>
+<div class="card"><h3>Badges</h3>${badges.map(([ok,n])=>`<span class="chip" style="opacity:${ok?1:.35}">${n}</span>`).join('')}</div>
+<div class="card"><h3>Test history</h3>${S.tests.slice(-10).reverse().map(x=>`<div>${x.d} • ${x.n}: <b>${x.s}/${x.t}</b></div>`).join('')||'<p>No tests yet.</p>'}</div>`};
+V.settings=()=>{app.innerHTML=back()+`<h1>⚙️ Settings</h1><div class="card"><div class="row"><button class="btn" onclick="toggleLang();V.settings()">Language: ${KN()?'ಕನ್ನಡ':'English'}</button><button class="btn" onclick="toggleDark()">Dark mode</button></div></div>
+<div class="card"><h3>Reset</h3><div class="row"><button class="btn warn" onclick="rs('mist')">Reset Mistake Book</button><button class="btn warn" onclick="rs('bm')">Reset Bookmarks</button><button class="btn warn" onclick="rs('prog')">Reset Progress</button><button class="btn warn" onclick="rs('all')">Reset Everything</button></div></div>`};
+function rs(k){if(!confirm('Are you sure? This cannot be undone.'))return;if(k==='mist')S.mist=[];if(k==='bm')S.bm=[];if(k==='prog'){S.done={};S.att=0;S.cor=0;S.typeStats={};S.xp=0;S.tests=[];S.daily={}}if(k==='all'){localStorage.removeItem(LS);location.reload();return}save();toast('Reset done')}
+
+/* ---------- SEARCH ---------- */
+function doSearch(v){v=v.trim().toLowerCase();if(!v){V.home();return}
+ const ls=L.filter(l=>(l.en+l.kn+l.d+l.ex.join(' ')).toLowerCase().includes(v));const bs=BANK.filter(b=>b.join(' ').toLowerCase().includes(v));const fs=FORM.filter(f=>f.join(' ').toLowerCase().includes(v));
+ app.innerHTML=`<h1>🔍 "${esc(v)}"</h1>${bs.length?`<div class="card"><h3>Adjective forms</h3><table>${bs.map(b=>`<tr><td>${b[0]}</td><td>${b[1]}</td><td>${b[2]}</td><td>${b[3]}</td><td>${sp(b[0])}</td></tr>`).join('')}</table></div>`:''}
+ ${fs.length?`<div class="card"><h3>Word formation</h3>${fs.map(f=>`<div>${f[0]} + ${f[2]} → <b>${f[1]}</b></div>`).join('')}</div>`:''}
+ ${ls.map(lessonHTML).join('')}${!ls.length&&!bs.length&&!fs.length?(()=>{const d=degreesOf(v);return `<div class="card">No lesson found. Predicted degrees: <b>${d[0]} – ${d[1]} – ${d[2]}</b></div>`})():''}`}
+
+/* ---------- TOGGLES / INIT ---------- */
+function toggleLang(){S.lang=KN()?'en':'kn';save();applyUI();const h=location.hash.slice(1);(V[h]||V.home)()}
+function toggleDark(){S.dark=!S.dark;save();applyUI()}
+function applyUI(){document.body.classList.toggle('dark',S.dark);$('langBtn').textContent=KN()?'English':'ಕನ್ನಡ';$('langBtn').classList.toggle('on',KN());document.documentElement.lang=KN()?'kn':'en'}
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+applyUI();go(location.hash.slice(1)||'home');
+</script>
+</body>
+</html>
